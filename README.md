@@ -139,13 +139,13 @@ The Kintone Customize Uploader uses [customize-manifest.json](customize-manifest
 
 ```json
 {
-    "app": "23",
+    "app": "1",
     "scope": "ALL",
     ...
 }
 ```
 
-So to ensure the file gets uploaded to the correct App, replace the `23` with your App ID.
+So to ensure the file gets uploaded to the correct App, replace the `1` with your App ID.
 
 **What is my App ID?** 🤔  
 
