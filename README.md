@@ -160,7 +160,7 @@ So to ensure the file gets uploaded to the correct App, replace the `1` with you
 
 1. Build the customization in the following files inside `./src/`
    * `main.ts`, `/requests/post_api.ts`, etc.
-2. Run `npm run build` to compile your Typescript into Javascript output in the `/dist` folder.
+2. Run `npm run build` to compile your TypeScript into JavaScript output in the `/dist` folder.
 3. Run `npm run upload` to upload the compiled files to your Kintone subdomain.
    * To directly upload the Kintone customization, use `./dist/KintoneCustomization.js`.
    * For more details, refer to [Customizing an App with JavaScript and CSS](https://get.kintone.help/k/en/user/app_settings/js_customize.html)
