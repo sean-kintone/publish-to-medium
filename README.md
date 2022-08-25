@@ -60,9 +60,9 @@ npm install -g @kintone/customize-uploader
 | [src/style.css](src/style.css)                               | Styling for the project can go here                                          |                        |
 | [src/requests/post_api.ts](src/requests/post_api.ts)         | The logic of the Medium.com POST API call                                    |                        |
 |                                                              |                                                                              |                        |
-| [fields.d.ts](fields.d.ts)                                   | Various type definitions for our typescript / Kintone environment            |                        |
-| [tsconfig.json](tsconfig.json)                               | Various settings for how typescript behaves                                  |                        |
-| [vite.config.js](vite.config.js)                             | Various settings for how and where our typescript compiles to                |                        |
+| [fields.d.ts](fields.d.ts)                                   | Various type definitions for our TypeScript / Kintone environment            |                        |
+| [tsconfig.json](tsconfig.json)                               | Various settings for how TypeScript behaves                                  |                        |
+| [vite.config.js](vite.config.js)                             | Various settings for how and where our TypeScript compiles to                |                        |
 |                                                              |                                                                              |                        |
 | [slides.pdf](slides.pdf)                                     | Workshop presentation's slide deck                                           |                        |
 | [docs/workshop-steps.md](docs/workshop-steps.md)             | Step-by-step guide that we do during the workshop                            |                        |
