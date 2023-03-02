@@ -21,6 +21,5 @@
   ],
   "include": [
     "src/main.ts",
-    "src/requests/post_api.ts"
   ],
 }

@@ -7,7 +7,7 @@
     "build": "tsc && vite build --emptyOutDir",
     "preview": "vite preview",
     "start": "node scripts/npm-start.js",
-    "upload": "env-cmd --verbose kintone-customize-uploader --watch customize-manifest.json ./src/main.ts ./src/requests/post_api.ts"
+    "upload": "env-cmd --verbose kintone-customize-uploader customize-manifest.json"
   },
   "devDependencies": {
     "@kintone/dts-gen": "^5.0.22",

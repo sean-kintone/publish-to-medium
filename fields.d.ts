@@ -16,5 +16,10 @@ declare namespace kintone.fieldTypes {
   interface CustomFields extends SystemFields {
     title: SingleLineText;
     body: MultiLineText;
+    tags: MultiSelect;
+    image: File;
+    mediumAPIKey: SingleLineText;
+    mediumAuthorID: SingleLineText;
+    devtoAPIKey: SingleLineText;
   }
 }
