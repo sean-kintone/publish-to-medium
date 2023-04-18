@@ -11,8 +11,8 @@ Check out [meetup.com/Kintone-Developers](https://www.meetup.com/Kintone-Develop
 * [Overview of the Repo](#overview-of-the-repo)
 * [Kintone Web Database & Credentials](#kintone-web-database--credentials)
   * [🚀 Getting your FREE Kintone Database](#-getting-your-free-kintone-database)
-* [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
-* [Create a `.env` file](#create-a-env-file)
+  * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+  * [Create a `.env` file](#create-a-env-file)
 * [Input the App ID](#input-the-app-id)
 * [Build the customization](#build-the-customization)
 * [Quick Dive into TypeScript & Vite](#quick-dive-into-typescript--vite)
@@ -60,9 +60,9 @@ npm install -g @kintone/customize-uploader
 | [src/style.css](src/style.css)                               | Styling for the project can go here                                          |                        |
 | [src/requests/post_api.ts](src/requests/post_api.ts)         | The logic of the Medium.com POST API call                                    |                        |
 |                                                              |                                                                              |                        |
-| [fields.d.ts](fields.d.ts)                                   | Various type definitions for our typescript / Kintone environment            |                        |
-| [tsconfig.json](tsconfig.json)                               | Various settings for how typescript behaves                                  |                        |
-| [vite.config.js](vite.config.js)                             | Various settings for how and where our typescript compiles to                |                        |
+| [fields.d.ts](fields.d.ts)                                   | Various type definitions for our TypeScript / Kintone environment            |                        |
+| [tsconfig.json](tsconfig.json)                               | Various settings for how TypeScript behaves                                  |                        |
+| [vite.config.js](vite.config.js)                             | Various settings for how and where our TypeScript compiles to                |                        |
 |                                                              |                                                                              |                        |
 | [slides.pdf](slides.pdf)                                     | Workshop presentation's slide deck                                           |                        |
 | [docs/workshop-steps.md](docs/workshop-steps.md)             | Step-by-step guide that we do during the workshop                            |                        |
@@ -81,9 +81,7 @@ npm install -g @kintone/customize-uploader
 | ------------------------------------------- | ------------------------------------------- |
 | ![SignUp-1.png](./docs/images/SignUp-1.png) | ![SignUp-2.png](./docs/images/SignUp-2.png) |
 
----
-
-## Create a Kintone Web Database App
+### Create a Kintone Web Database App
 
 Let's create a Kintone App with an article title, and text to send to Medium!
 
@@ -103,7 +101,7 @@ Be sure to click the **Save** and **Activate App** buttons! 💪
 
 Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺
 
-### 📺 How to Create a Kintone Database App | Video <!-- omit in toc -->
+#### 📺 How to Create a Kintone Database App | Video <!-- omit in toc -->
 
 <p align="center">
   <a href="https://youtu.be/pRtfn-8cf_I">
@@ -114,7 +112,7 @@ Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://
 
 ---
 
-## Create a `.env` file
+### Create a `.env` file
 
 Using the [.env.example](.env.example) file as a temple, create a `.env` file that will contain your login credentials and the Kintone App's View ID.
 
@@ -128,7 +126,7 @@ VITE_AUTHOR_ID="12345abcde67890"
 VITE_API_TOKEN="09876edcba54321"
 ```
 
-### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
+#### ⚠️ DO NOT DELETE THE [.env.example](.env.example) FILE!  <!-- omit in toc -->
 [.env.example](.env.example) is used by env-cmd to verify that `.env` file is correctly configured.
 
 ---
@@ -139,13 +137,13 @@ The Kintone Customize Uploader uses [customize-manifest.json](customize-manifest
 
 ```json
 {
-    "app": "23",
+    "app": "1",
     "scope": "ALL",
     ...
 }
 ```
 
-So to ensure the file gets uploaded to the correct App, replace the `23` with your App ID.
+So to ensure the file gets uploaded to the correct App, replace the `1` with your App ID.
 
 **What is my App ID?** 🤔  
 
@@ -160,7 +158,7 @@ So to ensure the file gets uploaded to the correct App, replace the `23` with yo
 
 1. Build the customization in the following files inside `./src/`
    * `main.ts`, `/requests/post_api.ts`, etc.
-2. Run `npm run build` to compile your Typescript into Javascript output in the `/dist` folder.
+2. Run `npm run build` to compile your TypeScript into JavaScript output in the `/dist` folder.
 3. Run `npm run upload` to upload the compiled files to your Kintone subdomain.
    * To directly upload the Kintone customization, use `./dist/KintoneCustomization.js`.
    * For more details, refer to [Customizing an App with JavaScript and CSS](https://get.kintone.help/k/en/user/app_settings/js_customize.html)
